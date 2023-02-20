@@ -1,0 +1,571 @@
+/*
+    Theme Name: oxigeno
+    Theme URI: 
+    Author: Roberto Vera
+    Author URI: 
+    Description: Theme Diseñado para Grupo Oxigeno
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: publicidad, , flexbox, css grid, mobile first
+    Text Domain: oxigeno
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 1366px;
+	line-height: 1.5;
+	font-family: themillion;
+	overflow-x: hidden;
+
+}
+
+@font-face {
+	font-family: themillion;
+	src: url(../fonts/EuclidFlex-Bold.otf)
+}
+
+@font-face {
+	font-family: themillion;
+	src: url(../fonts/EuclidFlex-Medium.otf)
+}
+
+.container {
+	margin: auto;
+}
+
+.header {
+	height: 152px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	background: transparent linear-gradient(180deg, #000000 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+}
+@media (max-width:768px) {
+	.header {
+	  display: block;
+	  height: 191px;
+	}
+  }
+
+.logo {
+	margin-left: 62px;
+}
+@media (max-width:768px) {
+	.logo {
+	  margin-top: 40px;
+	  margin-left: 20px;
+	}
+  }
+  @media (max-width:370px) {
+	.logo {
+	  margin-top: 40px;
+	  margin-left: 20px;
+	}
+  }
+
+.logo img {
+	width: 182px;
+}
+@media (max-width:768px) {
+	.logo img {
+	  width: 120px;
+	}
+  }
+
+.content {
+	width: 1366px;
+	min-height: 100vh;
+	background-color: #000;
+}
+
+.content .content-filter {
+	padding: 0 59px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+@media (max-width:768px) {
+	.content .content-filter {
+	  margin-top: 1em;
+	  width: 150%;
+	  padding: 0;
+	}
+  }
+  @media (max-width:370px) {
+	.content .content-filter {
+	  margin-top: 1em;
+	  width: 150%;
+	  padding: 0;
+	}
+  }
+.content-filter a {
+	text-decoration: none;
+}
+
+.content .content-filter .filter-item {
+	color: #ffffff;
+	font-size: 14px;
+	display: inline-block;
+	margin: 0 10px;
+	cursor: pointer;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
+
+.all {
+	visibility: hidden;
+}
+
+.content .gallery-item.show {
+	animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.content .gallery-item.hide {
+	display: none;
+}
+
+main {
+	display: flex;
+	padding-top: 152px;
+
+}
+@media (max-width:768px) {
+	main {
+		display: block;
+	}
+  }
+  @media (max-width:370px) {
+	main {
+		display: block;
+	}
+  }
+  .mid-main{
+	display: flex;
+  }
+.proyectos {
+	display: flex;
+	flex-direction: column;
+	width: 14.5%;
+	min-height: 100vh;
+}
+@media (max-width:768px) {
+	.proyectos {
+		display: block;
+		width: 100%;
+		min-height: 10vh;
+		margin-top: 12px;
+	}
+  }
+  @media (max-width:370px) {
+	.proyectos {
+		display: block;
+		width: 100%;
+		min-height: 10vh;
+		margin-top: 12px;
+	}
+  }
+
+
+.proyectos h1 {
+	color: #fff;
+	transform: matrix(0, -1, 1, 0, 0, 0);
+	margin-top: 7.2em;
+	font-size: 42px;
+	position: fixed;
+}
+@media (max-width:768px) {
+	.proyectos h1 {
+		position: absolute;
+		transform: none;
+		margin-top: 3em;
+		font-size: 24px;
+		margin: 20px;
+
+	}
+  }
+  @media (max-width:370px) {
+	.proyectos h1 {
+		position: absolute;
+		transform: none;
+		margin-top: 3em;
+		font-size: 24px;
+		margin: 20px;
+
+	}
+  }
+
+.contenedor {
+	width: 70%;
+	min-height: 100vh;
+	display: flex;
+}
+@media (max-width:768px) {
+	.contenedor {
+		width: 50%;
+		margin: 20px;
+
+	}
+  }
+  @media (max-width:370px) {
+	.contenedor {
+		width: 50%;
+		margin: 20px;
+
+	}
+  }
+
+.gallery {
+	width: 80%;
+}
+
+.faq {
+	width: 180%;
+	margin-top: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 2px solid rgb(68, 67, 67);
+	cursor: pointer;
+	color: #868686;
+}
+@media (max-width:768px) {
+	.faq {
+		width: 70%;
+
+	}
+  }
+.empresa {
+	width: 770px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 2em;
+}
+@media (max-width:768px) {
+	.empresa {
+		width: 300px;
+	  	margin: 0;
+	  	display: block;
+		height: 60px;
+	}
+  }
+  @media (max-width:370px) {
+	.empresa {
+		width: 300px;
+	  	margin: 0;
+	  	display: block;
+		height: 60px;
+	}
+  }
+.empresa p {
+	font-size: 14px;
+}
+@media (max-width:768px) {
+	.empresa p {
+	  font-size: 10px;
+	}
+  }
+  @media (max-width:370px) {
+	.empresa p {
+	  font-size: 10px;
+	}
+  }
+.empresa h3 {
+	font-size: 28px;
+}
+@media (max-width:768px) {
+	.empresa h3 {
+	  font-size: 16px;
+	}
+  }
+  @media (max-width:370px) {
+	.empresa h3 {
+	  font-size: 16px;
+	}
+  }
+
+.empresa:hover {
+	color: #fff;
+	transition-delay: 0.4s;
+}
+
+.empresa:hover>.datos-empresa ul li a {
+	color: #fff;
+	transition-delay: 0.4s;
+}
+
+.post-categories li {
+	list-style: none;
+}
+
+.post-categories li a {
+	text-decoration: none;
+	color: #868686;
+}
+@media (max-width:768px) {
+	.post-categories li a {
+	  font-size: 12px;
+	}
+  }
+  @media (max-width:370px) {
+	.post-categories li a {
+	  font-size: 12px;
+	}
+  }
+
+button {
+	padding: 10px 3em;
+	border-radius: 25px;
+	visibility: hidden;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 14px;
+	font-family: themillion;
+
+}
+
+.empresa:hover>button {
+	visibility: visible;
+	transition-delay: 0.5s;
+
+}
+@media (max-width:768px) {
+	.empresa:hover>button {
+		visibility: hidden;
+
+
+	}
+  }
+  @media (max-width:370px) {
+	.empresa:hover>button {
+		visibility: hidden;
+
+
+	}
+  }
+.empresa:active > button {
+	visibility: visible;
+
+}
+
+.contenido-empresa {
+	width: 870px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1.4s ease;
+	display: flex;
+	justify-content: space-between;
+}
+@media (max-width:768px) {
+	.contenido-empresa {
+		display: block;
+
+	}
+  }
+  @media (max-width:370px) {
+	.contenido-empresa {
+		display: block;
+
+	}
+  }
+
+.contenido-empresa p:first-child {
+	padding-top: 1rem;
+	line-height: 1.2rem;
+	font-size: 14px;
+	width: 362px;
+	height: 173px;
+	color: #fff;
+	font-weight: 100;
+	margin-left: 2em;
+
+
+}
+@media (max-width:768px) {
+	.contenido-empresa p:first-child {
+		font-size: 12px;
+		width: 236px;
+		height: 160px;
+		line-height: 1;
+		margin: 0;
+
+
+	}
+  }
+  @media (max-width:370px) {
+	.contenido-empresa p:first-child {
+		font-size: 12px;
+		width: 236px;
+		height: 160px;
+		line-height: 1;
+		margin: 0;
+
+
+	}
+  }
+
+
+.datos-proyecto {
+	width: 260px;
+	color: #fff;
+}
+@media (max-width:768px) {
+	.datos-proyecto {
+		margin:0;
+	}
+  }
+  @media (max-width:370px) {
+	.datos-proyecto {
+		margin:0;
+	}
+  }
+.datos-proyecto h2 {
+	font-size: 20px;
+}
+@media (max-width:768px) {
+	.datos-proyecto h2 {
+		font-size: 12px;
+		margin: 0;
+	}
+  }
+  @media (max-width:370px) {
+	.datos-proyecto h2 {
+		font-size: 12px;
+		margin: 0;
+	}
+  }
+
+
+
+.datos-proyecto h3 {
+	margin-top: 24px;
+	font-size: 16px;
+}
+@media (max-width:768px) {
+	.datos-proyecto h3 {
+		font-size: 12px;
+		margin: 0;
+		
+
+	}
+  }
+  @media (max-width:370px) {
+	.datos-proyecto h3 {
+		font-size: 12px;
+		margin: 0;
+		
+
+	}
+  }
+
+
+.datos-proyecto p {
+	font-weight: 100;
+	font-size: 14px;
+	margin: 0;
+}
+@media (max-width:768px) {
+	.datos-proyecto p {
+		font-size: 12px;
+		margin: 0;
+	}
+  }
+  @media (max-width:370px) {
+	.datos-proyecto p {
+		font-size: 12px;
+		margin: 0;
+	}
+  }
+.datos-proyecto .button {
+	background-color: aqua;
+}
+
+.faq.active .contenido-empresa {
+	max-height: 300px;
+}
+
+.años {
+	display: flex;
+	flex-direction: column;
+	width: 14.5%;
+	min-height: 100vh;
+
+}
+
+.años p {
+	color: #868686;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+@media (max-width:768px) {
+	.años p {
+		font-size: 12px;
+
+	}
+  }
+  @media (max-width:370px) {
+	.años p {
+		font-size: 12px;
+
+	}
+  }
+.años p:hover {
+	color: #fff;
+}
+
+.año {
+	margin-top: 3em;
+	position: fixed;
+	left: 88%;
+}
+
+footer {
+	height: 300px;
+	padding-top: 8em;
+	display: flex;
+	justify-content: space-around;
+	color: #fff;
+
+}
+@media (max-width:768px) {
+	footer  {
+		display: block;
+
+	}
+  }
+  @media (max-width:370px) {
+	footer  {
+		display: block;
+
+	}
+  }
+
+.direccion p:last-child {
+	margin-top: 20px;
+}
+
+.fono {
+	margin-top: 8em;
+}
+
+.redes-sociales {
+	display: flex;
+	align-items: start;
+
+}
+
+.redes-sociales img {
+	width: 30px;
+	margin-right: 6px;
+}
