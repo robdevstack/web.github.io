@@ -24,12 +24,12 @@ body {
 
 @font-face {
 	font-family: themillion;
-	src: url(./fonts/EuclidFlex-Bold.otf)
+	src: url(../fonts/EuclidFlex-Bold.otf)
 }
 
 @font-face {
 	font-family: themillion;
-	src: url(./fonts/EuclidFlex-Medium.otf)
+	src: url(../fonts/EuclidFlex-Medium.otf)
 }
 
 .container {
