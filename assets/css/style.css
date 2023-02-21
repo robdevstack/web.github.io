@@ -24,12 +24,12 @@ body {
 
 @font-face {
 	font-family: themillion;
-	src: url(../fonts/EuclidFlex-Bold.otf)
+	src: url(./fonts/EuclidFlex-Bold.otf)
 }
 
 @font-face {
 	font-family: themillion;
-	src: url(../fonts/EuclidFlex-Medium.otf)
+	src: url(./fonts/EuclidFlex-Medium.otf)
 }
 
 .container {
@@ -44,6 +44,12 @@ body {
 	background: transparent linear-gradient(180deg, #000000 0%, #00000000 100%) 0% 0% no-repeat padding-box;
 }
 @media (max-width:768px) {
+	.header {
+	  display: block;
+	  height: 191px;
+	}
+  }
+  @media (max-width:370px) {
 	.header {
 	  display: block;
 	  height: 191px;
@@ -71,7 +77,12 @@ body {
 }
 @media (max-width:768px) {
 	.logo img {
-	  width: 120px;
+	  width: 130px;
+	}
+  }
+  @media (max-width:370px) {
+	.logo img {
+	  width: 130px;
 	}
   }
 
@@ -242,6 +253,12 @@ main {
 @media (max-width:768px) {
 	.faq {
 		width: 70%;
+
+	}
+  }
+  @media (max-width:370px) {
+	.faq {
+		width: 50%;
 
 	}
   }
