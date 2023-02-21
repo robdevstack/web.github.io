@@ -304,13 +304,13 @@ main {
 }
 @media (max-width:768px) {
 	.faq {
-		width: 70%;
+		width: 100%;
 
 	}
   }
   @media (max-width:400px) {
 	.faq {
-		width: 50%;
+		width: 100%;
 
 	}
   }
@@ -648,7 +648,19 @@ button {
 	min-width: 100%;
 
 }
+@media (max-width:400px) {
+	.años  {
+		font-size: 12px;
+		min-width: 100%;
 
+	}
+  }
+  @media (max-width:350px) {
+	.años p {
+		min-width: 100%;
+
+	}
+  }
 .años p {
 	color: #868686;
 	margin-bottom: 10px;
