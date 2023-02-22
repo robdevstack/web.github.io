@@ -106,11 +106,7 @@ main {
 
 }
 
-  @media (max-width:375px) {
-	main {
-		display: block;
-	}
-  }
+
   .mid-main{
 	display: flex;
   }
@@ -150,6 +146,10 @@ main {
 	cursor: pointer;
 	color: #868686;
 }
+.faq.active .contenido-empresa {
+	max-height: 370px;
+}
+
 
 .empresa {
 	width: 100%;
@@ -340,6 +340,12 @@ footer {
 		width: 200px;
 		margin: 14px;
 	}
+		main {
+			display: block;
+		}
+	.mid-main{
+		display: flex;
+	  }
 	.proyectos {
 		display: block;
 		width: 100%;
@@ -362,7 +368,7 @@ footer {
 	
 	}
 	.contenedor{
-		width: 100%;
+		width: 90%;
 	}
 	.gallery {
 		width: 70%;
@@ -391,8 +397,52 @@ footer {
 	.empresa:hover>button {
 		visibility: hidden;
 	}
+	.faq .contenido-empresa{
+		height: 1200px;
+	}
+	.faq.active .contenido-empresa {
+		max-height: 300px;
+	}
+	.contenido-empresa{
+		display: block;
+		height: 1000px;
+
+	}
+	.contenido-empresa p:first-child {
+		font-size:10px;
+		width: 28%;
+		margin-left: 0;
+
+	}
+	.datos-proyecto{
+		margin-top: 1.6em;
+	}
+	.datos-proyecto button {
+		padding: 6px 1em;
+		border-radius: 25px;
+		visibility: visible;
+		cursor: pointer;
+		font-weight: 700;
+		font-size: 12px;
+		font-family: themillion;
+	
+	}
+	.datos-proyecto button img {
+		width: 20px;
+	}
+	.datos-proyecto h2 {
+	font-size: 12px;
+	margin-top: 10px;
+}
+.datos-proyecto h3 {
+	margin-top: 24px;
+	font-size: 12px;
+}
+.datos-proyecto p {
+	font-size: 10px;
+}
 	.años{
-		width: 0;
+		width: 10%;
 	}
 	.años p {
 		font-size: 12px;
