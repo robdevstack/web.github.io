@@ -129,8 +129,6 @@ main {
 
 .contenedor {
 	width: 100%;
-	min-height: 100vh;
-	display: flex;
 }
 
 
@@ -263,7 +261,6 @@ button {
 .años {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
 	width: 100%;
 
 }
@@ -312,9 +309,10 @@ footer {
 	width: 30px;
 	margin-right: 6px;
 }
-@media only screen and (min-width:320px) and (max-width:480px){
+@media only screen and (min-width:360px) and (max-width:480px){
 	.content {
 		width: 100%;
+		min-height: 100vh;
 	}
 	.content .content-filter {
 		text-align: start;
@@ -340,9 +338,6 @@ footer {
 		width: 200px;
 		margin: 14px;
 	}
-		main {
-			display: block;
-		}
 
 	.proyectos {
 		display: block;
@@ -367,14 +362,19 @@ footer {
 	}
 	.mid-main{
 		display: flex;
+		height: 440px;
 	  }
-	.contenedor{
+	  .mid-main .contenedor{
 		width: 85%;
+		height: 440px;
+
 		
 	}
 	.gallery {
 		width: 85%;
 		margin-left: 1.5em;
+		height: 440px;
+		
 	}
 	.faq{
 		width: 100%;
@@ -399,20 +399,16 @@ footer {
 	.empresa:hover>button {
 		visibility: hidden;
 	}
-	.faq .contenido-empresa{
-		height: 1200px;
-	}
-	.faq.active .contenido-empresa {
-		max-height: 300px;
-	}
+	/* .faq .contenido-empresa{
+	} */
 	.contenido-empresa{
 		display: block;
-		height: 1000px;
+		width: auto;
 
 	}
 	.contenido-empresa p:first-child {
 		font-size:10px;
-		width: 28%;
+		width: 90%;
 		margin-left: 0;
 
 	}
@@ -446,8 +442,8 @@ footer {
 .años {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
 	width: 15%;
+	min-height: 440px;
 
 }
 	.años p {
@@ -464,8 +460,9 @@ footer {
 		flex-direction: column;
 		color: #fff;
 		padding-top: 0;
-		order: 0;
 		margin-left: 1em;
+		font-size: 12px;
+
 	
 	}
 	.direccion p:last-child {
