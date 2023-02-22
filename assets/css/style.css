@@ -343,9 +343,7 @@ footer {
 		main {
 			display: block;
 		}
-	.mid-main{
-		display: flex;
-	  }
+
 	.proyectos {
 		display: block;
 		width: 100%;
@@ -367,11 +365,15 @@ footer {
 		height: 500px;
 	
 	}
+	.mid-main{
+		display: flex;
+	  }
 	.contenedor{
-		width: 90%;
+		width: 85%;
+		
 	}
 	.gallery {
-		width: 70%;
+		width: 85%;
 		margin-left: 1.5em;
 	}
 	.faq{
@@ -441,9 +443,13 @@ footer {
 .datos-proyecto p {
 	font-size: 10px;
 }
-	.años{
-		width: 10%;
-	}
+.años {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 15%;
+
+}
 	.años p {
 		font-size: 12px;
 	}
