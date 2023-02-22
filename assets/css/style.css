@@ -15,11 +15,10 @@
 	padding: 0;
 }
 body {
-	width: 1366px;
+	width: 100%;
 	line-height: 1.5;
 	font-family: themillion;
 	overflow-x: hidden;
-
 }
 
 @font-face {
@@ -43,6 +42,7 @@ body {
 	background: transparent linear-gradient(180deg, #000000 0%, #00000000 100%) 0% 0% no-repeat padding-box;
 }
 
+
 .logo {
 	margin-left: 62px;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .content {
-	width: 1366px;
+	width:100%;
 	min-height: 100vh;
 	background-color: #000;
 }
@@ -63,6 +63,7 @@ body {
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 .content-filter a {
 	text-decoration: none;
 }
@@ -105,7 +106,12 @@ main {
 
 }
 
-.mid-main{
+  @media (max-width:375px) {
+	main {
+		display: block;
+	}
+  }
+  .mid-main{
 	display: flex;
   }
 .proyectos {
@@ -115,6 +121,7 @@ main {
 	min-height: 100vh;
 }
 
+
 .proyectos h1 {
 	color: #fff;
 	transform: matrix(0, -1, 1, 0, 0, 0);
@@ -123,15 +130,17 @@ main {
 	position: fixed;
 }
 
+
 .contenedor {
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
 }
 
+
 .gallery {
 	width: 100%;
-}
+} 
 
 .faq {
 	width: 100%;
@@ -141,6 +150,7 @@ main {
 	cursor: pointer;
 	color: #868686;
 }
+
 .empresa {
 	width: 100%;
 	display: flex;
@@ -148,9 +158,11 @@ main {
 	align-items: center;
 	margin-left: 2em;
 }
+
 .empresa p {
 	font-size: 14px;
 }
+
 .empresa h3 {
 	font-size: 28px;
 }
@@ -182,7 +194,6 @@ button {
 	font-weight: 700;
 	font-size: 14px;
 	font-family: themillion;
-	margin-right: 7em;
 
 }
 
@@ -206,7 +217,6 @@ button {
 	justify-content: space-between;
 }
 
-
 .contenido-empresa p:first-child {
 	padding-top: 1rem;
 	line-height: 1.2rem;
@@ -219,6 +229,7 @@ button {
 
 
 }
+
 
 
 .datos-proyecto {
@@ -237,6 +248,7 @@ button {
 	font-size: 16px;
 }
 
+
 .datos-proyecto p {
 	font-weight: 100;
 	font-size: 14px;
@@ -247,9 +259,6 @@ button {
 	background-color: aqua;
 }
 
-.faq.active .contenido-empresa {
-	max-height: 300px;
-}
 
 .años {
 	display: flex;
@@ -302,4 +311,87 @@ footer {
 .redes-sociales img {
 	width: 30px;
 	margin-right: 6px;
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+	.header {
+		width: 200%;
+		height: 100px;
+		display: block;
+		position: fixed;
+		background: transparent linear-gradient(180deg, #000000 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+	}
+	.content .content-filter {
+		padding: 0;
+		margin-left: -25px;
+	}
+	.content .content-filter a {
+		font-size: 12px;
+	}
+	.logo img {
+		width: 120px;
+	}
+	.logo {
+		width: 200px;
+		margin: 14px;
+	}
+	main{
+		padding-top: 100px;
+
+	}
+	.proyectos {
+		display: block;
+		width: 100%;
+		min-height: 0;
+		height: 60px;
+	}
+	.proyectos h1 {
+		color: #fff;
+		transform: none;
+		margin-top: 1em;
+		margin-left: 1em;
+		font-size: 20px;
+		position: absolute;
+	}
+	.contenedor{
+		width: 54%;
+	}
+	.gallery {
+		width: 100%;
+		margin-left: 1.5em;
+	}
+	.faq{
+		width: 100%;
+		margin: 0;
+	}
+	.empresa{
+		width: 100%;
+		margin-left: 0;
+		display: block;
+		height: 50px;
+
+	}
+	.empresa a {
+		font-size: 8px;
+	}
+	.empresa p {
+		font-size: 8px;
+	}
+	.empresa h3 {
+		font-size: 12px;
+	}
+	.empresa:hover>button {
+		visibility: hidden;
+	}
+	.años{
+		width: 100px;
+	}
+	.años p {
+		font-size: 12px;
+	}
+	.año {
+		margin-top: 3em;
+		position: fixed;
+		left: 68%;
+	}
+
 }
